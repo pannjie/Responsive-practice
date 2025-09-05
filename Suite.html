@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<head>
+  <title>suite</title>
+  <style>
+   @font-face {
+    font-family:Roboto-italic;
+    src: url(Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf)}
+
+    @font-face {
+    font-family:Roboto;
+    src: url(Roboto/Roboto-VariableFont_wdth\,wght.ttf)
+   }
+
+    @font-face {
+    font-family:Montserrat;
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf)}
+
+    @font-face {
+    font-family:Epilogue;
+    src: url(Epilogue/Epilogue-VariableFont_wght.ttf)}
+     
+    @font-face {
+    font-family:Epilogue-italic;
+    src: url(Epilogue/Epilogue-Italic-VariableFont_wght.ttf)}
+
+    body {
+      background-color:rgb(243, 237, 231);
+    }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 50px auto;
+      
+      background-color: rgb(243, 237, 231);
+      width: 1110px;
+    }
+
+    .request {
+      font-family: Epilogue, Arial;
+      color: rgb(23, 35, 57);
+      border-color: rgb(23, 35, 57);
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: transparent;
+      border-radius: 5px;
+      border-width: 2px;
+    }
+
+    .request:hover {
+      cursor: pointer;
+      background-color: rgb(23, 35, 57);
+      color: white;
+    }
+
+    .main-1 {
+ 
+      display: flex;
+      flex-direction: row;
+      margin: auto;  /* auto centers it */
+      justify-content: space-between;
+      align-items: center;
+      width: 1110px;        /* fixed width */
+
+
+    }
+
+    .Intro {
+      width: 635px;   
+      z-index: 2;
+      position: relative;
+    }
+
+    .headline {
+      font-family: epilogue;
+      font-size: 72px;
+        }
+
+    .paragraph {
+      font-family: roboto;
+      font-size: 15px;
+      width: 285px;
+      margin-bottom: 40px;
+    }
+
+    .CTA {
+      font-family: Epilogue, Arial;
+      color: white;
+      border: none;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: transparent;
+      border-radius: 5px;
+      background-color: rgb(23, 35, 57);
+    }
+
+    .CTA:hover {
+      cursor: pointer;
+      background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+    }
+    
+
+    .stat-header {
+      font-family: epilogue;
+      font-weight: bold;
+      font-size: 72px;
+      margin: 0;
+      margin-top: 0px;
+     
+
+    }
+
+    .stat-body {
+      font-family: Roboto;
+      font-size: 15px;
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+
+    .bold {
+      font-weight: bold;
+      font-family: epilogue;
+    }
+
+    .stats {
+      margin-top: 72px;
+    }
+
+    .phone {
+      position: relative;
+      z-index: 0;
+      left: -40px;
+    
+    }
+
+    .curve {
+     margin: 0;
+     position: absolute;
+     left: 400px;
+      
+    }
+
+    .box {
+      background-color: rgb(23, 35, 57);
+      border-radius: 6px;
+      margin: 100px auto;
+      width: 1110px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: right;
+      border-radius: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      position: relative;
+      height: 535px;
+      margin-bottom: 50px;
+
+
+    }
+
+    .testimonial {
+      text-align: left;
+      width: 350px;
+      padding-right: 100px;
+    }
+
+    .title {
+      font-family: epilogue;
+      font-size: 48px;
+      line-height: 120%;
+      letter-spacing: -0.5px;
+      color: white;
+      margin: 0;
+    }
+
+    .body {
+      font-family: epilogue;
+      font-size: 20px;
+      line-height: 160%;
+      letter-spacing: -0.5px;
+      color: white;
+    }
+
+    .name {
+      font-family: epilogue;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 160%;
+      letter-spacing: -0.18px;
+      color: white;
+    }
+
+    .job {
+      font-family: epilogue;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 2.5px;
+      color: white;
+    }
+
+    .user {
+      position: absolute;
+      left: 100px;
+      bottom: 0px;
+      
+    }
+
+    .arrow {
+      left: 550px;
+      top: 170px;
+      position: absolute;
+      
+    }
+    
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-items: center;
+      margin: 100px auto;
+      width: 1110px;
+    }
+
+    .logo-group {
+      display: flex;
+      width: 100px;
+      justify-content: space-between;
+    }
+
+    .copyright {
+      font-family: epilogue;
+      font-size: 16px;
+      color:rgb(23, 35, 57);
+    }
+
+    /*after this, only media queries*/
+
+     @media (max-width: 768px) {
+        .header {
+          width: 704px;
+        }
+
+        .main-1 {
+ 
+        display: flex;
+        flex-direction: row;
+        margin: auto; 
+        justify-content: space-between;
+        align-items: center;
+        width: 704px;
+    } }
+  
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="suite-landing-page/suite-landing-page/starter-code/assets/logo.svg">
+    <button class="request">
+      Request Beta Access
+    </button>
+  </div>
+
+  <div class="main-1">
+    <div class="Intro">
+
+      <img class="curve" src="suite-landing-page/suite-landing-page/starter-code/assets/pattern-curved-line-1.svg">
+
+
+
+      <p class="headline">
+        A <span class="bold">super solution</span> for your <span class=bold>business.</span>
+      </p>
+
+      <p class="paragraph">
+        Our marketing and sales automations
+        help you scale your outreach to get 
+        more leads for your company
+      </p>
+
+      <button class="CTA">
+        Request Beta Access
+      </button>
+
+    </div> 
+
+    <img class="phone" src="suite-landing-page/suite-landing-page/starter-code/assets/image-hero-portrait.webp">
+
+
+    <div class="stats">
+      <p class="stat-header">
+        2K+
+      </p>
+
+      <p class="stat-body">
+        companies
+      </p>
+
+      <p class="stat-header">
+        8
+      </p>
+
+      <p class="stat-body">
+        languages
+      </p>
+
+      <p class="stat-header">
+        1.2M
+      </p>
+
+      <p class="stat-body">
+        leads
+      </p>
+
+    </div>
+  </div>
+
+
+
+  <div class="main-2">
+      <div class="box"> 
+      <img class="user" src="suite-landing-page/suite-landing-page/starter-code/assets/image-jeremy-large.webp">
+      <img class="arrow" src="suite-landing-page/suite-landing-page/starter-code/assets/pattern-curved-line-2.svg">
+      <div class="testimonial">
+        <p class="title">
+          It just works.
+        </p>
+
+        <p class="body">
+          "I really like how it is an all-in-one
+          solution that can handle many of the tatsks
+          that you would normally need separate tools 
+          to do the same job. This thing is a miracle
+          worker."
+        </p>
+
+        <p class="name">
+          JEREMY ROBINSON
+        </p>
+
+        <p class="job">
+          CMO, FYLO
+        </p>
+
+      </div>
+
+      
+
+      </div>
+  </div>
+
+  <div class="footer">
+    <img class="logo" src="suite-landing-page/suite-landing-page/starter-code/assets/logo.svg">
+    <p class="copyright">Copyright - Suite</p>
+    <div class="logo-group">
+      <img src="suite-landing-page/suite-landing-page/starter-code/assets/icon-facebook.svg">
+      <img src="suite-landing-page/suite-landing-page/starter-code/assets/icon-instagram.svg">
+      <img src="suite-landing-page/suite-landing-page/starter-code/assets/icon-twitter.svg">
+    </div>
+  </div>
+</body>
